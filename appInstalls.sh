@@ -47,6 +47,7 @@ BREWS=(
     zsh-syntax-highlighting
 )
 CASKS=(
+    alacritty
     adoptopenjdk8
     amazon-chime
     android-studio
