@@ -26,6 +26,7 @@ BREWS=(
     git-crypt
     gnutls
     go
+    gotop
     highlight
     htop
     jenv
