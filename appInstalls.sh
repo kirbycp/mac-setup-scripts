@@ -95,8 +95,8 @@ CASKS=(
     zoomus
 )
 FONTS=(
-    font-source-code-pro
     font-anonymous-pro
+    font-fira-code
     font-inconsolata
     font-input
     font-liberation-sans
@@ -106,6 +106,7 @@ FONTS=(
     font-pt-mono
     font-raleway
     font-roboto
+    font-source-code-pro
     font-source-sans-pro
     font-ubuntu
 )
