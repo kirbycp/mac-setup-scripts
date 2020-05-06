@@ -37,11 +37,14 @@ BREWS=(
     minikube
     neofetch
     node
+    nvim
     openssl
     python
     terraform
+    tmux
     toilet
     tree
+    vf
     wget
     wireshark
     zsh
