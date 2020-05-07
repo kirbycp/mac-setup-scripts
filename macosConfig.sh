@@ -782,18 +782,19 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" \
+#for app in "Activity Monitor" \
 #  "Address Book" \
 #  "Calendar" \
 #  "cfprefsd" \
 #  "Contacts" \
 #  "Dock" \
- "Finder" \
+# "Finder" \
 #  "Mail" \
 #  "Messages" \
 #  "Photos" \
 #  "Safari" \
 #  "SystemUIServer" \
-#  "iCal"; do
-  killall "${app}" &> /dev/null
-done
+#  "iCal"; 
+#do
+#  killall "${app}" &> /dev/null
+#done
