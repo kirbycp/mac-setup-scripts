@@ -58,7 +58,6 @@ CASKS=(
     atom
     azure-data-studio
     bot-framework-emulator
-    cleanmymac
     cyberduck
     docker
     dropbox
