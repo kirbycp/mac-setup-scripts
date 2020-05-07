@@ -54,8 +54,10 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm_s
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
-echo "making system modifications:"
+echo "Got to get my Yoda quotes"
+gem install yodaism
 
+echo "making system modifications:"
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
