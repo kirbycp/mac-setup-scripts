@@ -7,6 +7,8 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
+cd ~
+
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
@@ -27,8 +29,7 @@ git clone --bare https://www.github.com/kirbycp/repo.git $HOME/.dotfiles.git
 git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME checkout
 git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME --local status.showUntrackedFiles no
 git config --global core.excludesfile ~/.gitignore_global
-echo "zsh and dotfiles cloned must retart shell to take effect"
-source ~/.zshrc
+echo "dot files cloned into home directory"
 
 echo "Checking if homebrew is already installed"
 # Check for Homebrew, install if we don't have it
@@ -38,24 +39,15 @@ if test ! $(which brew); then
     echo "Brew installed"
 fi
 
-echo "Installing Apps"
-~/.dotfiles/appInstalls.sh
-
 echo "Installing Pure Promt"
 npm install --global pure-prompt
 
-echo "Installing iTerm2 Shell Integration"
-curl -L https://iterm2.com/shell_integration/zsh \
--o ~/.iterm2_shell_integration.zsh
-
-echo "configuring iterm2 to use dotfiles settings"
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm_settings"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 echo "Got to get my Yoda quotes"
 gem install yodaism
+
+echo "Reloading zshrc file"
+source ~/.zshrc
 
 echo "making system modifications:"
 ###############################################################################
