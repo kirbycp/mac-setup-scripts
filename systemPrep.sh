@@ -25,9 +25,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "Finishing installing oh-my-zsh"
 
 echo "Cloning dotfiles from Github"
-git clone --bare https://www.github.com/kirbycp/repo.git $HOME/.dotfiles.git
+git clone --bare git@github.com:kirbycp/MacDotFiles.git $HOME/.dotfiles.git
 git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME checkout
-git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME --local status.showUntrackedFiles no
+git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 git config --global core.excludesfile ~/.gitignore_global
 echo "dot files cloned into home directory"
 
