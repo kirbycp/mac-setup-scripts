@@ -120,7 +120,8 @@ MAS=(
     409201541   #Pages
     682658836   #GarageBand
     1274494218  #iFlicks 3 
-    409203825   #Numbers 
+    409203825   #Numbers
+    1274495053  #Microsoft To-Do 
 )
 
 echo "Configuring Brew Taps"
