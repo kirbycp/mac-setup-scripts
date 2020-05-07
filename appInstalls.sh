@@ -55,7 +55,6 @@ CASKS=(
     adoptopenjdk8
     amazon-chime
     android-studio
-    atom
     azure-data-studio
     bot-framework-emulator
     cyberduck
