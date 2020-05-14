@@ -4,6 +4,9 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+# requires xcode and tools!
+xcode-select -p || exit "XCode must be installed! (use the app store)"
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -42,6 +45,8 @@ fi
 echo "Installing Pure Promt"
 npm install --global pure-prompt
 
+echo "Installing zsh auto suggestions"
+github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 echo "Got to get my Yoda quotes"
 gem install yodaism
