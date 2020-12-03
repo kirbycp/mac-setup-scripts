@@ -95,6 +95,7 @@ CASKS=(
 FONTS=(
     font-anonymous-pro
     font-fira-code
+    font-hack-nerd-font
     font-inconsolata
     font-input
     font-liberation-sans
