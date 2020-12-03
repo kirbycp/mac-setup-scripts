@@ -40,6 +40,7 @@ BREWS=(
     nvim
     openssl
     python
+    romkatv/powerlevel10k/powerlevel10k
     terraform
     tmux
     toilet
