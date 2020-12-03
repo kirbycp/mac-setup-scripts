@@ -11,3 +11,8 @@ echo "configuring iterm2 to use dotfiles settings"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm_settings"
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+echo "installing zsh plugins"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
+
