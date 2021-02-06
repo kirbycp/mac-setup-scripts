@@ -8,13 +8,9 @@ BREWS=(
     ant
     autoconf
     awscli
-    azure-cli
     azcopy
+    azure-cli
     azure-functions-core-tools
-    gpg
-    hub
-    handbrake
-    helm
     bash
     bash-completion
     boost
@@ -22,11 +18,16 @@ BREWS=(
     dfc
     figlet
     freetype
+    gpg
     git
     git-crypt
+    gh
     gnutls
     go
     gotop
+    hub
+    handbrake
+    helm
     highlight
     htop
     jenv
@@ -36,11 +37,17 @@ BREWS=(
     maven
     minikube
     neofetch
+    neovim
     node
     nvim
     openssl
+    openjdk
+    openjdk8
+    openjdk11
     python
-    romkatv/powerlevel10k/powerlevel10k
+    powerlevel9k
+    powerlevel10k
+    rustup-init
     terraform
     tmux
     toilet
@@ -91,6 +98,7 @@ CASKS=(
     xquartz
     webex-meetings
     wireshark
+    yacreader
     zoomus
 )
 FONTS=(
