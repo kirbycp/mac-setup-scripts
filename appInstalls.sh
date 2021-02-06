@@ -42,8 +42,8 @@ BREWS=(
     nvim
     openssl
     openjdk
-    openjdk8
-    openjdk11
+    openjdk@8
+    openjdk@11
     python
     powerlevel9k
     powerlevel10k
@@ -60,7 +60,6 @@ BREWS=(
 )
 CASKS=(
     alacritty
-    adoptopenjdk8
     amazon-chime
     android-studio
     azure-data-studio
@@ -149,7 +148,7 @@ echo "Brew Apps Installed"
 
 # Install MacOS Applications via Brew Casks
 echo "Installing apps from Brew casks"
-brew cask install ${CASKS[@]}
+brew install --cask ${CASKS[@]}
 
 # Install Fonts via brew
 echo "Installing brew fonts"
